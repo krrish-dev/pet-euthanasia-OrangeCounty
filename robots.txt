@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Disallow: /generate-cities.js
+
+Sitemap: https://pethomeeuthanasiaorangecounty.com/sitemap.xml
