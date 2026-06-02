@@ -295,7 +295,7 @@ document.addEventListener('DOMContentLoaded', function () {
     let lastScrollY = 0;
     window.addEventListener('scroll', function () {
       const heroSection = document.querySelector('.hero');
-      const heroBottom = heroSection ? heroSection.offsetTop + heroSection.offsetHeight : 400;
+      const heroBottom = heroSection ? heroSection.offsetTop + heroSection.offsetHeight : 150;
 
       if (window.scrollY > heroBottom) {
         stickyCta.classList.add('visible');
