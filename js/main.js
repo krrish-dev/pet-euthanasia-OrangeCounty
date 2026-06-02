@@ -179,7 +179,7 @@ document.addEventListener('DOMContentLoaded', function () {
           '\nZip Code: ' + (this.querySelector('[name="zipcode"]') ? this.querySelector('[name="zipcode"]').value.trim() : '') +
           '\nMessage: ' + message.value.trim()
         );
-        window.location.href = 'mailto:info@pethomeeuthanasiaorangecounty.com?subject=' + subject + '&body=' + body;
+        window.location.href = 'mailto:pethomeeuthanasiaservice@gmail.com?subject=' + subject + '&body=' + body;
 
         // Show success
         const successMsg = document.createElement('div');

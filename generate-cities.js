@@ -46,6 +46,8 @@ function generateCityPage(city) {
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" href="../images/favicon.png">
+  <link rel="apple-touch-icon" href="../images/favicon.png">
   <title>In-Home Pet Euthanasia ${city.name}, CA | Pet Home Euthanasia Orange County</title>
   <meta name="description" content="Compassionate in-home pet euthanasia and cremation services in ${city.name}, CA. Peaceful end-of-life care for dogs and cats. Call (760) 912-0848.">
   <meta name="keywords" content="pet euthanasia ${city.name}, in-home pet euthanasia ${city.name} CA, dog euthanasia ${city.name}, cat euthanasia ${city.name}, pet cremation ${city.name}">
@@ -66,7 +68,7 @@ function generateCityPage(city) {
     "description": "Compassionate in-home pet euthanasia and cremation services in ${city.name}, CA.",
     "url": "https://pethomeeuthanasiaorangecounty.com/cities/${city.slug}.html",
     "telephone": "+17609120848",
-    "email": "info@pethomeeuthanasiaorangecounty.com",
+    "email": "pethomeeuthanasiaservice@gmail.com",
     "areaServed": {"@type": "City", "name": "${city.name}", "addressRegion": "CA"},
     "openingHoursSpecification": {
       "@type": "OpeningHoursSpecification",
@@ -99,9 +101,9 @@ function generateCityPage(city) {
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M6.62 10.79a15.053 15.053 0 006.59 6.59l2.2-2.2a1.003 1.003 0 011.01-.24c1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1C10.07 21 3 13.93 3 4c0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
         (760) 912-0848
       </a>
-      <a href="mailto:info@pethomeeuthanasiaorangecounty.com">
+      <a href="mailto:pethomeeuthanasiaservice@gmail.com">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
-        info@pethomeeuthanasiaorangecounty.com
+        pethomeeuthanasiaservice@gmail.com
       </a>
     </div>
   </div>
@@ -172,20 +174,44 @@ ${allCityLinks}
           <p>Saying goodbye to a beloved pet is one of the most difficult parts of having them in our lives. Dr. Soliman and his team offer compassionate care with quality of life assessments and advice based on decades of veterinary experience to help you make the best decision for your pet and your family.</p>
           <p>By choosing in-home euthanasia in ${city.name}, you'll know that your pet had a peaceful passing surrounded by everything and everyone they love most in the world. Our goal is to provide pets and owners the compassion and care they deserve at a difficult time.</p>
 
-          <h2>Our Services in ${city.name}</h2>
-          <p>We offer the following services for ${city.name} pet owners:</p>
-          <ul style="list-style: disc; padding-left: 30px; margin-bottom: 20px;">
-            <li style="margin-bottom: 8px;"><strong>Euthanasia Only</strong> — Starting at $450. Includes travel, home visit, sedation and euthanasia.</li>
-            <li style="margin-bottom: 8px;"><strong>Euthanasia + Communal Cremation</strong> — Starting at $550. Includes all of the above plus group cremation.</li>
-            <li style="margin-bottom: 8px;"><strong>Euthanasia + Private Cremation</strong> — Starting at $750. Includes all of the above plus individual cremation with ashes returned.</li>
-          </ul>
-          <p>Prices may vary depending upon the distance and weight of the pet. For more information, call or text <a href="tel:7609120848">(760) 912-0848</a>.</p>
+          <div class="city-pricing">
+            <h2>Our Services in ${city.name}</h2>
+
+            <div class="city-pricing-grid">
+              <div class="city-price-card">
+                <h3>Euthanasia Only</h3>
+                <div class="city-price"><span>Starting at</span>$450</div>
+                <p>Includes travel for the veterinarian, an in-home exam, pet sedation and euthanasia.</p>
+                <a href="tel:7609120848" class="btn btn--primary">Call to Schedule</a>
+              </div>
+              <div class="city-price-card">
+                <h3>Euthanasia + Communal Cremation</h3>
+                <div class="city-price"><span>Starting at</span>$550</div>
+                <p>Includes all of the above plus gentle transportation for group cremation.</p>
+                <a href="tel:7609120848" class="btn btn--primary">Call to Schedule</a>
+              </div>
+              <div class="city-price-card">
+                <h3>Euthanasia + Private Cremation</h3>
+                <div class="city-price"><span>Starting at</span>$750</div>
+                <p>Includes all of the above plus private cremation with ashes returned to you.</p>
+                <a href="tel:7609120848" class="btn btn--primary">Call to Schedule</a>
+              </div>
+            </div>
+
+            <div class="city-pricing-note">
+              <p>This cost applies for 20 miles radius from our location in Rancho Cucamonga.</p>
+              <p>Prices may vary depending upon the distance and weight of the pet. For more information call or text <a href="tel:7609120848">(760) 912-0848</a>.</p>
+              <p style="margin-top: 10px; font-size: 0.9em; opacity: 0.8;">We accept cash, checks, Visa, Mastercard, Zelle, Apple Cash &amp; PayPal.</p>
+            </div>
+          </div>
 
           <h2>Pet Cremation &amp; Aftercare in ${city.name}</h2>
-          <p>We offer pet cremation and aftercare services so that you can honor your pet's memory. Private cremation allows your pet's remains to be returned to you in a personalized cedar box, while communal cremation does not return ashes. Regardless of which option you choose, you can request a fur clipping and a clay paw print.</p>
+          <p>We offer pet cremation and aftercare services so that you can honor your pet's memory. Private cremation allows your pet's remains to be returned to you in a personalized cedar box, while communal cremation does not return ashes. You may also request a fur clipping and a clay paw print as a keepsake.</p>
 
-          <div style="text-align: center; margin: 40px 0;">
-            <a href="tel:7609120848" class="btn btn--primary btn--large">Call Now (760) 912-0848</a>
+          <div class="city-cta-box">
+            <h3>Ready to Schedule? We're Here for You.</h3>
+            <p>Dr. Soliman and his team are available 7 days a week, 8am&ndash;8pm, to provide compassionate in-home care in ${city.name}.</p>
+            <a href="tel:7609120848" class="btn btn--outline btn--large">Call Now (760) 912-0848</a>
           </div>
         </div>
 
@@ -207,7 +233,7 @@ ${sidebarLinks}
       <div class="footer__grid">
         <div class="footer__brand">
           <img src="../images/logo.png" alt="Pet Home Euthanasia Services" width="150" height="50">
-          <p>Providing compassionate in-home pet euthanasia and aftercare services in Orange County and the surrounding areas.</p>
+          <p>Providing compassionate in-home pet euthanasia and aftercare services in Orange County and the surrounding areas. Also serving <a href="https://pethomeeuthanasiaservice.com/" target="_blank" rel="noopener">pet euthanasia services</a> across Southern California.</p>
         </div>
         <div class="footer__links">
           <h4>Quick Links</h4>
@@ -221,7 +247,7 @@ ${sidebarLinks}
         <div class="footer__contact">
           <h4>Contact Us</h4>
           <a href="tel:7609120848">(760) 912-0848</a>
-          <a href="mailto:info@pethomeeuthanasiaorangecounty.com">info@pethomeeuthanasiaorangecounty.com</a>
+          <a href="mailto:pethomeeuthanasiaservice@gmail.com">pethomeeuthanasiaservice@gmail.com</a>
           <p>Open 7 Days a Week</p>
           <p>8:00 AM – 8:00 PM</p>
           <p>By Appointment Only</p>
